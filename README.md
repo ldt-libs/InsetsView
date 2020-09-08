@@ -1,5 +1,5 @@
 # InsetsView
-By using this library, your app will have truely transparent system bar (status bar, navigation bar, etc) with xml only, no ANY CODE needed
+By using this library, your app will have truely transparent system bar (status bar, navigation bar, etc) with **xml only**, no **ANY CODE** needed
 
 ## Usages
 
