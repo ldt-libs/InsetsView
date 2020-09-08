@@ -4,7 +4,7 @@ By using this library, your app will have truely transparent system bar (status 
 ## Usages
 
 ### InsetsMarginView
-Constraint other child views in the same ConstraintLayout parent to this InsetsMarginView view so that those views will not be covered by the System UI. By using this pattern, you can handle almost the common ui layouts.
+Constraint other child views in the same ConstraintLayout parent to this InsetsMarginView view so that those views will not be covered by the System UI. By using this view, you can handle almost the common ui layout types.
 
 ```
 <androidx.constraintlayout.widget.ConstraintLayout
