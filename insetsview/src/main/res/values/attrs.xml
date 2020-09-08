@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="InsetsView">
+        <!-- Should consume the window insets. Consuming means its child views won't be able to get/handle window insets anymore -->
+        <attr name="consumeWindowInsets" format="boolean" />
+        <!-- Specify the applying type of insets to the top -->
+        <attr name="applyWindowInsetTop" format="enum">
+
+            <enum name="none" value="0" />
+            <enum name="padding" value="1" />
+            <enum name="margin" value="2" />
+            <enum name="ignore" value="3" />
+        </attr>
+        <!-- Specify the applying type of insets to the left -->
+        <attr name="applyWindowInsetLeft" format="enum">
+            <enum name="none" value="0" />
+            <enum name="padding" value="1" />
+            <enum name="margin" value="2" />
+            <enum name="ignore" value="3" />
+        </attr>
+        <!-- Specify the applying type of insets to the right -->
+        <attr name="applyWindowInsetRight" format="enum">
+            <enum name="none" value="0" />
+            <enum name="padding" value="1" />
+            <enum name="margin" value="2" />
+            <enum name="ignore" value="3" />
+        </attr>
+        <!-- Specify the applying type of insets to the bottom -->
+        <attr name="applyWindowInsetBottom" format="enum">
+            <enum name="none" value="0" />
+            <enum name="padding" value="1" />
+            <enum name="margin" value="2" />
+            <enum name="ignore" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="InsetsFrameLayout">
+        <attr name="consumeWindowInsets" />
+        <attr name="applyWindowInsetTop" />
+        <attr name="applyWindowInsetLeft" />
+        <attr name="applyWindowInsetRight" />
+        <attr name="applyWindowInsetBottom" />
+    </declare-styleable>
+
+    <declare-styleable name="InsetsConstraintLayout">
+        <attr name="consumeWindowInsets" />
+        <attr name="applyWindowInsetTop" />
+        <attr name="applyWindowInsetLeft" />
+        <attr name="applyWindowInsetRight" />
+        <attr name="applyWindowInsetBottom" />
+    </declare-styleable>
+
+    <declare-styleable name="InsetsLinearLayout">
+        <attr name="consumeWindowInsets" />
+        <attr name="applyWindowInsetTop" />
+        <attr name="applyWindowInsetLeft" />
+        <attr name="applyWindowInsetRight" />
+        <attr name="applyWindowInsetBottom" />
+    </declare-styleable>
+
+    <declare-styleable name="InsetsRelativeLayout">
+        <attr name="consumeWindowInsets" />
+        <attr name="applyWindowInsetTop" />
+        <attr name="applyWindowInsetLeft" />
+        <attr name="applyWindowInsetRight" />
+        <attr name="applyWindowInsetBottom" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,3 @@
+include ':insetsview'
+include ':app'
+rootProject.name = "Insets View"

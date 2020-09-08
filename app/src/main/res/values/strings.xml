@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Insets View: Demo</string>
+
+    <string name="rent">Rent from R29.99</string>
+    <string name="buy">Buy from R129.99</string>
+    <string name="template_movie_details">March 2017 PG 129 minutes</string>
+    <string name="template_movie_title">Beauty and the Beast</string>
+    <string name="template_movie_genre">Family</string>
+    <string name="template_rotten_tomato_rating">71%</string>
+    <string name="template_similar">Similar</string>
+    <string name="template_movie_description">The story and characters you know and love come to spectacular life in the live-action adaption of Disney\'s animated classic Beauty and the Beast.</string>
+    <string name="template_movie_description_long">An enchantress disguised as an old beggar woman arrives at a castle during a ball and offers the host, a cruel and selfish prince, a rose in return for shelter from a storm. When he refuses, she reveals her identity. As punishment for the prince\'s lack of compassion, the enchantress transforms him into a beast and his servants into household objects, then erases the castle, himself, and his servants from the memories of their loved ones and everyone else in the town. She casts a spell on the rose and warns the prince that the spell will only be broken if he learns to love another, and be loved in return before the last petal falls, or he will remain a beast forever. Some years later, in the small town of Villeneuve, Belle, the book-loving daughter of an inventor named Maurice, dreams of adventure. She constantly brushes off advances from Gaston, an arrogant former soldier, as he is not the type of man Belle wishes to marry. On Maurice\'s way to a convention and lost in the forest, he seeks refuge in the Beast\'s castle, but the Beast imprisons him for stealing a rose from his garden as a gift to Belle. When Maurice\'s horse returns without him, Belle ventures out in search of him, and finds him locked in the castle dungeon. Belle tricks both her father and the Beast by asking for a simple hug goodbye from her father, she pushes him out and locks herself in the dungeon. The Beast agrees to let her take her father\'s place and forces Maurice to leave immediately. Belle befriends the castle\'s servants; candelabra footman Lumiere, clock majordomo Cogsworth, feather-duster maid Plumette, teapot housekeeper Mrs. Potts, and her teacup son Chip. They invite her to a spectacular dinner. When she wanders into the forbidden west wing and finds the rose, the Beast scares her into the woods. Belle is ambushed by a pack of wolves, but the Beast rescues her, becoming injured in the process. As Belle nurses his wounds, a spark develops between them. The Beast shows Belle a gift from the enchantress, a book that transports readers wherever they want. Belle uses the book to visit her childhood home in Paris, where she discovers a plague-doctor\'s mask and realizes that she and her father were forced to leave when her mother succumbed to the plague.</string>
+    <string name="template_number_ratings">242 ratings</string>
+    <string name="content_description_add_playlist">Add to watchlist</string>
+    <string name="content_description_poster">Movie Poster Image</string>
+    <string name="content_description_hero_image">Hero Image</string>
+    <string name="email">EMAIL</string>
+    <string name="call">CALL</string>
+    <string name="navigate">NAVIGATE</string>
+    <string name="option_circular_demo">Circular Demo</string>
+    <string name="saturation">Saturation</string>
+    <string name="contrast">Contrast</string>
+    <string name="warmth">Warmth</string>
+    <string name="button_start">Start</string>
+    <string name="button_end">End</string>
+</resources>
