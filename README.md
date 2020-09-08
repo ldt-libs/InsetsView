@@ -18,7 +18,7 @@ src="https://raw.githubusercontent.com/dtrung98/Source/master/54c689ea37c4c89a91
 ## Usage
 There're serveral custom viewgroups provided in this library:
 
- #### - InsetsMarginView
+ #### InsetsMarginView
  
 Constraint other child views in the same ConstraintLayout parent to this InsetsMarginView view so that those views will not be covered by the System UI. By using this view, you can handle almost the common ui layout types.
 
