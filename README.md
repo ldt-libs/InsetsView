@@ -1,9 +1,23 @@
 # InsetsView
-By using this library, your app will have truely transparent system bar (status bar, navigation bar, etc) with **XML ONLY**, no **ANY CODE** needed
+**By using this library, your app will have truely transparent system bar (status bar, navigation bar, etc) with XML ONLY, no ANY CODE needed**
 
-## Usages
+## Screen shot
 
-### InsetsMarginView
+<div align="center">
+  <table align="center" border="0" >
+  <tr>
+    <td> <img width="360"
+src="https://user-images.githubusercontent.com/33343210/82741450-1ca06280-9d7c-11ea-9986-ad2a83673e23.gif"/></td>
+  </tr>
+</table>
+  </div>
+</br>
+
+## Usage
+There're serveral custom viewgroups provided in this library:
+
+ #### - InsetsMarginView
+ 
 Constraint other child views in the same ConstraintLayout parent to this InsetsMarginView view so that those views will not be covered by the System UI. By using this view, you can handle almost the common ui layout types.
 
 ```
@@ -40,4 +54,9 @@ Constraint other child views in the same ConstraintLayout parent to this InsetsM
 ...
 
 </androidx.constraintlayout.widget.ConstraintLayout
+```
+
+## Adding to projects
+```
+implementation 'com.github.ldt-libs:InsetsView:1.0'
 ```
