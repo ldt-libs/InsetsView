@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <declare-styleable name="InsetsView">
         <!-- Should consume the window insets. Consuming means its child views won't be able to get/handle window insets anymore -->
         <attr name="consumeWindowInsets" format="boolean" />

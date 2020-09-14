@@ -6,20 +6,9 @@ import android.view.View
 import android.view.Window
 import androidx.core.content.ContextCompat
 import com.dtrung98.insetsview.R
+import java.util.function.BinaryOperator
 
-object WindowTheming {
-
-}
-
-fun Window.setUpSystemUIVisibility(light: Boolean) {
-    if (light) {
-        setUpLightSystemUIVisibility()
-    } else {
-        setUpDarkSystemUIVisibility()
-    }
-}
-
-/**This method provides transparent system bars to every screen fragments:
+/**This method applies transparent system bars to the windows (activity, dialog, dialog fragment):
  * - Dark Screen (ex: MeetingFragment): Dark screen use white system bar icons which available in every android version
 
  * - Light Screen (ex: HomeFragment): Light screen requires dark system bar icons which only available in newer android version
@@ -31,19 +20,13 @@ fun Window.setUpSystemUIVisibility(light: Boolean) {
  *
  *      + Android below 21
  */
-/*private fun Window.setUpTheme2(destinationId: Int) {
-    val themeDarkDestinations = intArrayOf(R.id.fragment_meeting, R.id.splash)
-    val themeLightDestinations = intArrayOf()
-    val ignoredDestinations = intArrayOf(
-    )
-    when (destinationId) {
-        in ignoredDestinations -> {
-        }
-        in themeDarkDestinations -> setUpTheme2Dark()
-        in themeLightDestinations -> setUpTheme2Light()
-        else -> setUpTheme2Light()
+fun Window.setUpSystemUIVisibility(light: Boolean) {
+    if (light) {
+        setUpLightSystemUIVisibility()
+    } else {
+        setUpDarkSystemUIVisibility()
     }
-}*/
+}
 
 fun Window.setUpLightSystemUIVisibility() {
 
@@ -81,10 +64,7 @@ fun Window.setUpLightSystemUIVisibility() {
             (View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                     or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION)
         }
-
     }
-
-
 }
 
 fun Window.setUpDarkSystemUIVisibility() {
