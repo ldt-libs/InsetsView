@@ -16,7 +16,7 @@ src="https://raw.githubusercontent.com/dtrung98/Source/master/54c689ea37c4c89a91
 </br>
 
 ## Usage
-There're several custom view groups provided in the library:
+There're several views provided in the library:
 
  #### SafeAreaView
  
