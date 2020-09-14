@@ -1,5 +1,5 @@
 # InsetsView
-**By using this library, your app will have truely transparent system bar (status bar, navigation bar, etc) with XML ONLY, no ANY CODE needed**
+** Constraint view elements to not be coverred by the android system bars (status bar, navigation bar, etc) with XML ONLY, no ANY CODE needed**
 
 ## Screen shot
 
@@ -16,11 +16,11 @@ src="https://raw.githubusercontent.com/dtrung98/Source/master/54c689ea37c4c89a91
 </br>
 
 ## Usage
-There're serveral custom viewgroups provided in this library:
+There're several custom view groups provided in the library:
 
- #### InsetsMarginView
+ #### SafeAreaView
  
-Constraint other child views in the same ConstraintLayout parent to this InsetsMarginView view so that those views will not be covered by the System UI. By using this view, you can handle almost the common ui layout types.
+Constraint other child views in the same ConstraintLayout parent to this SafeAreaView view so those views will not be covered by the System UI. By using this view, you can handle almost the common ui layout types.
 
 ```
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,8 +28,8 @@ Constraint other child views in the same ConstraintLayout parent to this InsetsM
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<com.dtrung98.insetsview.view.InsetsMarginView
-    android:id="@+id/insetsMarginView"
+<com.dtrung98.insetsview.view.SafeAreaView
+    android:id="@+id/safeArea"
     android:layout_width="0dp"
     android:layout_height="0dp"
     app:layout_constraintStart_toStartOf="parent"
@@ -48,10 +48,10 @@ Constraint other child views in the same ConstraintLayout parent to this InsetsM
     android:id="@+id/content"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    app:layout_constraintStart_toStartOf="@+id/insetsMarginView"
-    app:layout_constraintEnd_toEndOf="@+id/insetsMarginView"
-    app:layout_constraintTop_toTopOf="@+id/insetsMarginView"
-    app:layout_constraintBot_toBotOf="@+id/insetsMarginView"/>
+    app:layout_constraintStart_toStartOf="@+id/safeArea"
+    app:layout_constraintEnd_toEndOf="@+id/safeArea"
+    app:layout_constraintTop_toTopOf="@+id/safeArea"
+    app:layout_constraintBot_toBotOf="@+id/safeArea"/>
 
 ...
 
