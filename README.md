@@ -30,13 +30,8 @@ Constraint other child views in the same ConstraintLayout parent to this SafeAre
 
 <com.dtrung98.insetsview.view.SafeAreaView
     android:id="@+id/safeArea"
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    android:visibility="invisible"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 <ImageView
     android:id="@+id/wallImageView"
     android:layout_width="0dp"
