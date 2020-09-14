@@ -1,5 +1,5 @@
 # InsetsView
-**Constraint view elements to not be coverred by the android system bars (status bar, navigation bar, etc) with XML ONLY, no ANY CODE needed**
+**Constraint view elements to not be covered by the android system bars (status bar, navigation bar, etc) with XML ONLY, no ANY CODE needed**
 
 ## Screen shot
 
