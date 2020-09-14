@@ -28,7 +28,7 @@ Constraint other child views in the same ConstraintLayout parent to this SafeAre
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<com.dtrung98.insetsview.view.SafeAreaView
+<com.dtrung98.insetsview.SafeAreaView
     android:id="@+id/safeArea"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
