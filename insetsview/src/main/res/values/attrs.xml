@@ -1,68 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="InsetsView">
-        <!-- Should consume the window insets. Consuming means its child views won't be able to get/handle window insets anymore -->
-        <attr name="consumeWindowInsets" format="boolean" />
-        <!-- Specify the applying type of insets to the top -->
-        <attr name="applyWindowInsetTop" format="enum">
+        <!-- Specify the applying type of system bars insets to the top -->
+        <attr name="applySystemBarsInsets_Top" format="enum">
+            <enum name="ignore" value="0" />
+            <enum name="padding" value="1" />
+            <enum name="margin" value="2" />
+        </attr>
+        <!-- Specify the applying type of system bars insets to the start -->
+        <attr name="applySystemBarsInsets_Start" format="enum">
+            <enum name="ignore" value="0" />
+            <enum name="padding" value="1" />
+            <enum name="margin" value="2" />
+        </attr>
+        <!-- Specify the applying type of system bars insets to the end -->
+        <attr name="applySystemBarsInsets_End" format="enum">
+            <enum name="ignore" value="0" />
+            <enum name="padding" value="1" />
+            <enum name="margin" value="2" />
+        </attr>
+        <!-- Specify the applying type of system bars insets to the bottom -->
+        <attr name="applySystemBarsInsets_Bottom" format="enum">
+            <enum name="ignore" value="0" />
+            <enum name="padding" value="1" />
+            <enum name="margin" value="2" />
+        </attr>
 
-            <enum name="none" value="0" />
-            <enum name="padding" value="1" />
-            <enum name="margin" value="2" />
-            <enum name="ignore" value="3" />
+        <attr name="applySystemBarsInsetsAdjust_Top" format="dimension" />
+        <attr name="applySystemBarsInsetsAdjust_Start" format="dimension" />
+        <attr name="applySystemBarsInsetsAdjust_End" format="dimension" />
+        <attr name="applySystemBarsInsetsAdjust_Bottom" format="dimension" />
+
+        <attr name="dispatchSystemBarsInsetsAdjust_Start" format="dimension" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Top" format="dimension" />
+        <attr name="dispatchSystemBarsInsetsAdjust_End" format="dimension" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Bottom" format="dimension" />
+
+        <!-- decide how this viewgroup will dispatch its current insets to child views -->
+        <attr name="dispatchSystemBarsInsets_Start" format="enum">
+            <!-- consume the start system bars insets -->
+            <enum name="not_consumed" value="0" />
+            <!-- consume the start system bars window insets -->
+            <enum name="consumed" value="1" />
+            <!-- consume the bottom system bars window insets -->
+            <enum name="adjust_reduce" value="2" />
+            <!-- consume the start system bars window insets -->
+            <enum name="adjust_relative" value="3" />
+            <!-- consume the start system bars window insets -->
+            <enum name="adjust_fixed" value="4" />
+
         </attr>
-        <!-- Specify the applying type of insets to the left -->
-        <attr name="applyWindowInsetLeft" format="enum">
-            <enum name="none" value="0" />
-            <enum name="padding" value="1" />
-            <enum name="margin" value="2" />
-            <enum name="ignore" value="3" />
+        <!-- decide how this viewgroup will dispatch its current insets to child views. Default value is not_consumed -->
+        <attr name="dispatchSystemBarsInsets_Top" format="enum">
+            <!-- consume the top system bars insets -->
+            <enum name="not_consumed" value="0" />
+            <!-- consume the top system bars window insets -->
+            <enum name="consumed" value="1" />
+            <!-- consume the bottom system bars window insets -->
+            <enum name="adjust_reduce" value="2" />
+            <!-- consume the top system bars window insets -->
+            <enum name="adjust_relative" value="3" />
+            <!-- consume the top system bars window insets -->
+            <enum name="adjust_fixed" value="4" />
         </attr>
-        <!-- Specify the applying type of insets to the right -->
-        <attr name="applyWindowInsetRight" format="enum">
-            <enum name="none" value="0" />
-            <enum name="padding" value="1" />
-            <enum name="margin" value="2" />
-            <enum name="ignore" value="3" />
+        <!-- decide how this viewgroup will dispatch its current insets to child views -->
+        <attr name="dispatchSystemBarsInsets_End" format="enum">
+            <!-- consume the end system bars insets -->
+            <enum name="not_consumed" value="0" />
+            <!-- consume the end system bars window insets -->
+            <enum name="consumed" value="1" />
+            <!-- consume the bottom system bars window insets -->
+            <enum name="adjust_reduce" value="2" />
+            <!-- consume the end system bars window insets -->
+            <enum name="adjust_relative" value="3" />
+            <!-- consume the end system bars window insets -->
+            <enum name="adjust_fixed" value="4" />
         </attr>
-        <!-- Specify the applying type of insets to the bottom -->
-        <attr name="applyWindowInsetBottom" format="enum">
-            <enum name="none" value="0" />
-            <enum name="padding" value="1" />
-            <enum name="margin" value="2" />
-            <enum name="ignore" value="3" />
+        <!-- decide how this viewgroup will dispatch its current insets to child views -->
+        <attr name="dispatchSystemBarsInsets_Bottom" format="enum">
+            <!-- consume the bottom system bars insets -->
+            <enum name="not_consumed" value="0" />
+            <!-- consume the bottom system bars window insets -->
+            <enum name="consumed" value="1" />
+            <!-- consume the bottom system bars window insets -->
+            <enum name="adjust_reduce" value="2" />
+            <!-- consume the bottom system bars window insets -->
+            <enum name="adjust_relative" value="3" />
+            <!-- consume the bottom system bars window insets -->
+            <enum name="adjust_fixed" value="4" />
         </attr>
     </declare-styleable>
 
     <declare-styleable name="InsetsFrameLayout">
-        <attr name="consumeWindowInsets" />
-        <attr name="applyWindowInsetTop" />
-        <attr name="applyWindowInsetLeft" />
-        <attr name="applyWindowInsetRight" />
-        <attr name="applyWindowInsetBottom" />
+        <attr name="applySystemBarsInsets_Top" />
+        <attr name="applySystemBarsInsets_Start" />
+        <attr name="applySystemBarsInsets_End" />
+        <attr name="applySystemBarsInsets_Bottom" />
+
+        <attr name="dispatchSystemBarsInsets_Top" />
+        <attr name="dispatchSystemBarsInsets_Start" />
+        <attr name="dispatchSystemBarsInsets_End" />
+        <attr name="dispatchSystemBarsInsets_Bottom" />
+
+        <attr name="dispatchSystemBarsInsetsAdjust_Top" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Start" />
+        <attr name="dispatchSystemBarsInsetsAdjust_End" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Bottom" />
     </declare-styleable>
 
     <declare-styleable name="InsetsConstraintLayout">
-        <attr name="consumeWindowInsets" />
-        <attr name="applyWindowInsetTop" />
-        <attr name="applyWindowInsetLeft" />
-        <attr name="applyWindowInsetRight" />
-        <attr name="applyWindowInsetBottom" />
+        <attr name="applySystemBarsInsets_Top" />
+        <attr name="applySystemBarsInsets_Start" />
+        <attr name="applySystemBarsInsets_End" />
+        <attr name="applySystemBarsInsets_Bottom" />
+
+        <attr name="dispatchSystemBarsInsets_Top" />
+        <attr name="dispatchSystemBarsInsets_Start" />
+        <attr name="dispatchSystemBarsInsets_End" />
+        <attr name="dispatchSystemBarsInsets_Bottom" />
+
+        <attr name="dispatchSystemBarsInsetsAdjust_Top" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Start" />
+        <attr name="dispatchSystemBarsInsetsAdjust_End" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Bottom" />
+
     </declare-styleable>
 
     <declare-styleable name="InsetsLinearLayout">
-        <attr name="consumeWindowInsets" />
-        <attr name="applyWindowInsetTop" />
-        <attr name="applyWindowInsetLeft" />
-        <attr name="applyWindowInsetRight" />
-        <attr name="applyWindowInsetBottom" />
+        <attr name="applySystemBarsInsets_Top" />
+        <attr name="applySystemBarsInsets_Start" />
+        <attr name="applySystemBarsInsets_End" />
+        <attr name="applySystemBarsInsets_Bottom" />
+
+        <attr name="dispatchSystemBarsInsets_Top" />
+        <attr name="dispatchSystemBarsInsets_Start" />
+        <attr name="dispatchSystemBarsInsets_End" />
+        <attr name="dispatchSystemBarsInsets_Bottom" />
+
+        <attr name="dispatchSystemBarsInsetsAdjust_Top" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Start" />
+        <attr name="dispatchSystemBarsInsetsAdjust_End" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Bottom" />
+
     </declare-styleable>
 
     <declare-styleable name="InsetsRelativeLayout">
-        <attr name="consumeWindowInsets" />
-        <attr name="applyWindowInsetTop" />
-        <attr name="applyWindowInsetLeft" />
-        <attr name="applyWindowInsetRight" />
-        <attr name="applyWindowInsetBottom" />
+        <attr name="applySystemBarsInsets_Top" />
+        <attr name="applySystemBarsInsets_Start" />
+        <attr name="applySystemBarsInsets_End" />
+        <attr name="applySystemBarsInsets_Bottom" />
+
+        <attr name="dispatchSystemBarsInsets_Top" />
+        <attr name="dispatchSystemBarsInsets_Start" />
+        <attr name="dispatchSystemBarsInsets_End" />
+        <attr name="dispatchSystemBarsInsets_Bottom" />
+
+        <attr name="dispatchSystemBarsInsetsAdjust_Top" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Start" />
+        <attr name="dispatchSystemBarsInsetsAdjust_End" />
+        <attr name="dispatchSystemBarsInsetsAdjust_Bottom" />
+
     </declare-styleable>
 </resources>

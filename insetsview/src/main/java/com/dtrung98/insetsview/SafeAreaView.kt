@@ -3,10 +3,12 @@ package com.dtrung98.insetsview
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
+import android.os.Build
 import android.util.AttributeSet
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowInsets
+import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 
@@ -81,6 +83,7 @@ class SafeAreaView @JvmOverloads constructor(
         super.setLayoutParams(params)
     }
 
+    @RequiresApi(Build.VERSION_CODES.KITKAT_WATCH)
     override fun onApplyWindowInsets(insets: WindowInsets?): WindowInsets {
         val lp = layoutParams as ViewGroup.MarginLayoutParams?
 
